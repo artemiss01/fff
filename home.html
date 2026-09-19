@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<style>
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 500;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			height: 100vh;
+			background-color: #050505;
+			overflow: hidden;
+		}
+
+		.preloader img {
+			width: 128px;
+			height: 128px;
+
+			animation: preload-fkd 1s linear infinite;
+		}
+
+
+		@keyframes preload-fkd {
+			0% {
+				transform: scale(1);
+			}
+
+			50% {
+				transform: scale(1.1);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}
+	</style>
+
+
+	<link rel="stylesheet" href="css/style.min.css?_v=20260919130832">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="preloader">
+		<img src="img/icons/preloader.svg" alt="preloader">
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row row-header">
+					<a href="home.html" class="row-header__logo"><picture><source srcset="img/logo-fkd.webp" type="image/webp"><img src="img/logo-fkd.png" alt="logotype fkd"></picture></a>
+					<div class="row-header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item_categories" data-da=".row-header, 767.98, 2">
+									<button type="button" class="menu__link menu__link_arrow">categories</button>
+									<nav class="menu__sub-menu sub-menu">
+										<ul class="sub-menu__items">
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">t-shirt</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">caps</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">shtani</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">hudi</a></li>
+
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">t-shirt</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">caps</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">shtani</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">hudi</a></li>
+										</ul>
+									</nav>
+								</li>
+								<li class="menu__item"><a target="_blank" href="/" class="menu__link">about us</a></li>
+								<li class="menu__item"><a target="_blank" href="/" class="menu__link">conacts</a></li>
+
+							</ul>
+						</nav>
+					</div>
+					<div class="row-header__info-block block-info-header" data-da=".menu__list, 479.98, 0 ">
+						<div class="block-info-header__custom-select" data-da=".menu__list, 767.98, 9" translate="no">
+
+							<select name="money" class="block-info-header__change-money">
+								<option value="1" selected>mdl</option>
+								<option value="2">usd</option>
+								<option value="3">eur</option>
+							</select>
+
+
+							<select name="language" class="block-info-header__language">
+								<option value="1" selected>ru</option>
+								<option value="2">EN</option>
+								<option value="3">RO</option>
+							</select>
+						</div>
+						<button class="block-info-header__bag bag" type="button" aria-label="shopping cart" translate="no">
+							<span class="bag__quentity">22</span>
+							<span class="bag__value-price">$250</span>
+						</button>
+					</div>
+					<button type="button" class="row-header__menu-icon menu-text">
+						<i></i>
+						<div class="menu-text__txt">
+							<span class="menu-text__label-close" translate="no">close</span>
+							<span class="menu-text__label-open" translate="no">menu</span>
+						</div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero-page">
+				<div class="hero-page__container">
+					<div class="hero-page__content content-hero">
+						<div class="content-hero__logo-ibg">
+							<picture><source srcset="img/banner-home/title-img.webp" type="image/webp"><img src="img/banner-home/title-img.png" alt="logo-title"></picture>
+						</div>
+						<h1 class="content-hero__title">flamekid</h1>
+						<p>DON’T FOLLOW THE CROWD.CHOOSE YOUR OWN WAY.</p>
+						<div class="content-hero__bottom-row">
+							<div class="content-hero__crambs brush-text">
+								<svg class="brush-text__svg" viewBox="0 0 900 100">
+									<defs>
+										<mask id="brush-mask">
+
+											<path class="brush-mask__stroke" d="M-30 53
+													   C80 45 140 60 220 51
+													   C310 41 370 59 450 49
+													   C540 39 610 58 690 48
+													   C770 40 835 56 930 47" fill="none" stroke="white" stroke-width="75" stroke-linecap="round" />
+
+										</mask>
+									</defs>
+									<text class="brush-text__title" x="0" y="65" text-anchor="start" mask="url(#brush-mask)">
+										hand-painted / oversize / unisex
+									</text>
+								</svg>
+							</div>
+							<a href="#" target="_blank" class="content-hero__bottom-link">view all</a>
+						</div>
+					</div>
+					<div class="hero-page__img-man-ibg">
+						<picture><source srcset="img/banner-home/fkd.webp" type="image/webp"><img src="img/banner-home/fkd.png" alt="man"></picture>
+					</div>
+				</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20260919130832"></script>
+</body>
+
+</html>
