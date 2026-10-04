@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>корзина</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<style>
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 500;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			height: 100vh;
+			background-color: #050505;
+			overflow: hidden;
+		}
+
+		.preloader img {
+			width: 128px;
+			height: 128px;
+
+			animation: preload-fkd 1s linear infinite;
+		}
+
+
+		@keyframes preload-fkd {
+			0% {
+				transform: scale(1);
+			}
+
+			50% {
+				transform: scale(1.1);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}
+	</style>
+
+
+	<link rel="stylesheet" href="css/style.min.css?_v=20261005012623">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="preloader">
+	<img src="img/icons/preloader.svg" alt="preloader">
+</div>
+
+<body>
+	<div class="wrapper">
+		<header class="header header_black">
+			<div class="header__container">
+				<div class="header__row row-header">
+					<a href="home.html" class="row-header__logo"><picture><source srcset="img/icons/logo-fkd.webp" type="image/webp"><img src="img/icons/logo-fkd.png" alt="logotype fkd"></picture></a>
+					<div class="row-header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item_categories" data-da=".row-header, 767.98, 2">
+									<button type="button" class="menu__link menu__link_arrow">categories</button>
+									<nav class="menu__sub-menu sub-menu">
+										<ul class="sub-menu__items">
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">t-shirt</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">caps</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">shtani</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">hudi</a></li>
+
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">t-shirt</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">caps</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">shtani</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">hudi</a></li>
+										</ul>
+									</nav>
+								</li>
+								<li class="menu__item"><a target="_blank" href="/" class="menu__link">about us</a></li>
+								<li class="menu__item"><a target="_blank" href="/" class="menu__link">conacts</a></li>
+
+							</ul>
+						</nav>
+					</div>
+					<div class="row-header__info-block block-info-header" data-da=".menu__list, 479.98, 0 ">
+						<div class="block-info-header__custom-select" data-da=".menu__list, 767.98, 9" translate="no">
+
+							<select name="money" class="block-info-header__change-money">
+								<option value="1" selected>mdl</option>
+								<option value="2">usd</option>
+								<option value="3">eur</option>
+							</select>
+
+
+							<select name="language" class="block-info-header__language">
+								<option value="1" selected>ru</option>
+								<option value="2">EN</option>
+								<option value="3">RO</option>
+							</select>
+						</div>
+					</div>
+					<button type="button" class="row-header__menu-icon menu-text">
+						<i></i>
+						<div class="menu-text__txt">
+							<span class="menu-text__label-close" translate="no">close</span>
+							<span class="menu-text__label-open" translate="no">menu</span>
+						</div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__breadcrumbs-bag breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list breadcrumbs__list_black-color">
+						<li class="breadcrumbs__item"><a href="home.html" class="breadcrumbs__link">главная</a></li>
+						<li class="breadcrumbs__item">
+							<p class="breadcrumbs__link breadcrumbs__link_active">bag</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="page__bag-content content-bag">
+				<div class="content-bag__container">
+					<div class="content-bag__top-row row-top">
+						<h1 class="row-top__title caption">моя корзина my bag</h1>
+					</div>
+					<div class="content-bag__row">
+						<div class="content-bag__left-column column-left-bag">
+							<div class="column-left-bag__product product-bag">
+								<div class="product-bag__card">
+									<a href="product.html" class="product-bag__img-ibg">
+										<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="t-shirt"></picture>
+									</a>
+									<div class="product-bag__body">
+										<h2 class="product-bag__title">fkd 1/01</h2>
+
+										<div class="product-bag__color-info info-color info-card-bag">
+											<div class="info-color__caption caption-info-bag">color</div>
+											<div class="info-color__value">black</div>
+										</div>
+
+										<div class="product-bag__size-info info-size info-card-bag">
+											<div class="info-size__caption caption-info-bag">size</div>
+											<div class="info-size__value">m</div>
+										</div>
+
+										<div class="product-bag__quentity quentity-products info-card-bag">
+											<div class="quentity-products__caption caption-info-bag">quentity</div>
+											<div class="quentity-products__items">22</div>
+										</div>
+										<div class="product-bag__price price-product-bag info-card-bag">
+											<div class="price-product-bag__caption caption-info-bag">total</div>
+											<div class="price-product-bag__money" translate="no">$90</div>
+										</div>
+										<button type="button" class="product-bag__btn-remove btn-bay">удалить из корзины</button>
+									</div>
+								</div>
+							</div>
+							<div class="column-left-bag__product product-bag">
+								<div class="product-bag__card">
+									<div class="product-bag__img-ibg">
+										<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="t-shirt"></picture>
+									</div>
+									<div class="product-bag__body">
+										<h2 class="product-bag__title">fkd 1/01</h2>
+
+										<div class="product-bag__color-info info-color info-card-bag">
+											<div class="info-color__caption caption-info-bag">цвет</div>
+											<div class="info-color__value">черный</div>
+										</div>
+
+										<div class="product-bag__size-info info-size info-card-bag">
+											<div class="info-size__caption caption-info-bag">размер</div>
+											<div class="info-size__value">m</div>
+										</div>
+
+										<div class="product-bag__quentity quentity-products info-card-bag">
+											<div class="quentity-products__caption caption-info-bag">количество</div>
+											<div class="quentity-products__items">22</div>
+										</div>
+										<div class="product-bag__price price-product-bag info-card-bag">
+											<div class="price-product-bag__caption caption-info-bag">общая цена</div>
+											<div class="price-product-bag__money" translate="no">$90</div>
+										</div>
+										<button type="button" class="product-bag__btn-remove btn-bay">удалить из корзины</button>
+									</div>
+								</div>
+							</div>
+							<div class="column-left-bag__product product-bag">
+								<div class="product-bag__card">
+									<div class="product-bag__img-ibg">
+										<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="t-shirt"></picture>
+									</div>
+									<div class="product-bag__body">
+										<h2 class="product-bag__title">fkd 1/01</h2>
+
+										<div class="product-bag__color-info info-color info-card-bag">
+											<div class="info-color__caption caption-info-bag">color</div>
+											<div class="info-color__value">black</div>
+										</div>
+
+										<div class="product-bag__size-info info-size info-card-bag">
+											<div class="info-size__caption caption-info-bag">size</div>
+											<div class="info-size__value">m</div>
+										</div>
+
+										<div class="product-bag__quentity quentity-products info-card-bag">
+											<div class="quentity-products__caption caption-info-bag">quentity</div>
+											<div class="quentity-products__items">22</div>
+										</div>
+										<div class="product-bag__price price-product-bag info-card-bag">
+											<div class="price-product-bag__caption caption-info-bag">total</div>
+											<div class="price-product-bag__money" translate="no">$90</div>
+										</div>
+										<button type="button" class="product-bag__btn-remove btn-bay">удалить из корзины</button>
+									</div>
+								</div>
+							</div>
+							<div class="column-left-bag__product product-bag">
+								<div class="product-bag__card">
+									<div class="product-bag__img-ibg">
+										<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="t-shirt"></picture>
+									</div>
+									<div class="product-bag__body">
+										<h2 class="product-bag__title">fkd 1/01</h2>
+
+										<div class="product-bag__color-info info-color info-card-bag">
+											<div class="info-color__caption caption-info-bag">color</div>
+											<div class="info-color__value">black</div>
+										</div>
+
+										<div class="product-bag__size-info info-size info-card-bag">
+											<div class="info-size__caption caption-info-bag">size</div>
+											<div class="info-size__value">m</div>
+										</div>
+
+										<div class="product-bag__quentity quentity-products info-card-bag">
+											<div class="quentity-products__caption caption-info-bag">quentity</div>
+											<div class="quentity-products__items">22</div>
+										</div>
+										<div class="product-bag__price price-product-bag info-card-bag">
+											<div class="price-product-bag__caption caption-info-bag">total</div>
+											<div class="price-product-bag__money" translate="no">$90</div>
+										</div>
+										<button type="button" class="product-bag__btn-remove btn-bay">удалить из корзины</button>
+									</div>
+								</div>
+							</div>
+							<div class="column-left-bag__product product-bag">
+								<div class="product-bag__card">
+									<div class="product-bag__img-ibg">
+										<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="t-shirt"></picture>
+									</div>
+									<div class="product-bag__body">
+										<h2 class="product-bag__title">fkd 1/01</h2>
+
+										<div class="product-bag__color-info info-color info-card-bag">
+											<div class="info-color__caption caption-info-bag">color</div>
+											<div class="info-color__value">black</div>
+										</div>
+
+										<div class="product-bag__size-info info-size info-card-bag">
+											<div class="info-size__caption caption-info-bag">size</div>
+											<div class="info-size__value">m</div>
+										</div>
+
+										<div class="product-bag__quentity quentity-products info-card-bag">
+											<div class="quentity-products__caption caption-info-bag">quentity</div>
+											<div class="quentity-products__items">22</div>
+										</div>
+										<div class="product-bag__price price-product-bag info-card-bag">
+											<div class="price-product-bag__caption caption-info-bag">total</div>
+											<div class="price-product-bag__money" translate="no">$90</div>
+										</div>
+										<button type="button" class="product-bag__btn-remove btn-bay">удалить из корзины</button>
+									</div>
+								</div>
+							</div>
+							<div class="column-left-bag__product product-bag">
+								<div class="product-bag__card">
+									<div class="product-bag__img-ibg">
+										<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="t-shirt"></picture>
+									</div>
+									<div class="product-bag__body">
+										<h2 class="product-bag__title">fkd 1/01</h2>
+
+										<div class="product-bag__color-info info-color info-card-bag">
+											<div class="info-color__caption caption-info-bag">color</div>
+											<div class="info-color__value">black</div>
+										</div>
+
+										<div class="product-bag__size-info info-size info-card-bag">
+											<div class="info-size__caption caption-info-bag">size</div>
+											<div class="info-size__value">m</div>
+										</div>
+
+										<div class="product-bag__quentity quentity-products info-card-bag">
+											<div class="quentity-products__caption caption-info-bag">quentity</div>
+											<div class="quentity-products__items">22</div>
+										</div>
+										<div class="product-bag__price price-product-bag info-card-bag">
+											<div class="price-product-bag__caption caption-info-bag">total</div>
+											<div class="price-product-bag__money" translate="no">$90</div>
+										</div>
+										<button type="button" class="product-bag__btn-remove btn-bay">удалить из корзины</button>
+									</div>
+								</div>
+							</div>
+							<div class="column-left-bag__product product-bag">
+								<div class="product-bag__card">
+									<div class="product-bag__img-ibg">
+										<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="t-shirt"></picture>
+									</div>
+									<div class="product-bag__body">
+										<h2 class="product-bag__title">fkd 1/01</h2>
+
+										<div class="product-bag__color-info info-color info-card-bag">
+											<div class="info-color__caption caption-info-bag">color</div>
+											<div class="info-color__value">black</div>
+										</div>
+
+										<div class="product-bag__size-info info-size info-card-bag">
+											<div class="info-size__caption caption-info-bag">size</div>
+											<div class="info-size__value">m</div>
+										</div>
+
+										<div class="product-bag__quentity quentity-products info-card-bag">
+											<div class="quentity-products__caption caption-info-bag">quentity</div>
+											<div class="quentity-products__items">22</div>
+										</div>
+										<div class="product-bag__price price-product-bag info-card-bag">
+											<div class="price-product-bag__caption caption-info-bag">total</div>
+											<div class="price-product-bag__money" translate="no">$90</div>
+										</div>
+										<button type="button" class="product-bag__btn-remove btn-bay">удалить из корзины</button>
+									</div>
+								</div>
+							</div>
+							<div class="column-left-bag__product product-bag">
+								<div class="product-bag__card">
+									<div class="product-bag__img-ibg">
+										<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="t-shirt"></picture>
+									</div>
+									<div class="product-bag__body">
+										<h2 class="product-bag__title">fkd 1/01</h2>
+
+										<div class="product-bag__color-info info-color info-card-bag">
+											<div class="info-color__caption caption-info-bag">color</div>
+											<div class="info-color__value">black</div>
+										</div>
+
+										<div class="product-bag__size-info info-size info-card-bag">
+											<div class="info-size__caption caption-info-bag">size</div>
+											<div class="info-size__value">m</div>
+										</div>
+
+										<div class="product-bag__quentity quentity-products info-card-bag">
+											<div class="quentity-products__caption caption-info-bag">quentity</div>
+											<div class="quentity-products__items">22</div>
+										</div>
+										<div class="product-bag__price price-product-bag info-card-bag">
+											<div class="price-product-bag__caption caption-info-bag">total</div>
+											<div class="price-product-bag__money" translate="no">$90</div>
+										</div>
+										<button type="button" class="product-bag__btn-remove btn-bay">удалить из корзины</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-bag__right-column column-right">
+							<div class="column-right__body">
+								<h3 class="column-right__title">order summary</h3>
+								<div class="column-right__quentity-info info-quentity info-card-bag">
+									<div class="info-quentity__title">товароа</div>
+									<div class="info-quentity__product-quentity">99</div>
+								</div>
+								<div class="column-right__price price-order info-card-bag">
+									<div class="price-order__title">итоговая ценна</div>
+									<div class="price-order__price">$147</div>
+								</div>
+								<p class="column-right__additional-info">внимание ценна без учета доставки, стоимость доставки появиться при оформлении заказа при выборе страны</p>
+								<button type="submit" class="column-right__checkout btn-bay btn-bay_orange">перейти к оформлению заказа</button>
+								<a href="#" class="column-right__continue-shop">продолжить покупки</a>
+								<div class="column-right__icons-row row-icons-product">
+									<div class="row-icons-product__card">
+										<div class="row-icons-product__icon-diverly"></div>
+										<p class="row-icons-product__txt">быстрая доставка</p>
+									</div>
+									<div class="row-icons-product__card">
+										<div class="row-icons-product__icon-shiping"></div>
+										<p class="row-icons-product__txt">отправка по миру</p>
+									</div>
+									<div class="row-icons-product__card">
+										<div class="row-icons-product__icon-secure"></div>
+										<p class="row-icons-product__txt">безопасные платежи</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__row">
+					<div class="footer__item-left left-item-footer">
+						<p class="left-item-footer__big-txt">Your inner fire <br> <span> is your energy</span></p>
+						<p class="left-item-footer__small-txt">flamekid - own way</p>
+						<a target="_blank" href="#" class="left-item-footer__link btn-bay btn-bay_orange">shop now</a>
+						<p class="left-item-footer__copyright" data-da=".right-item, 767.98,4">2026 flamekid. all rights reserved</p>
+					</div>
+					<div class="footer__item-img">
+						<div class="footer__wrapper-decor-ibg">
+							<img src="img/icons/fkd-footer.svg" alt="fkd">
+						</div>
+					</div>
+					<div class="footer__item-right right-item">
+						<a href="home.html" class="right-item__logo">flamekid</a>
+						<div class="right-item__social-media media-social">
+
+							<a target="_blank" href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/inst-01.webp" type="image/webp"><img src="img/icons/inst-01.png" alt="instagram icon"></picture>
+							</a>
+
+							<a target="_blank" href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/tiktok-01.webp" type="image/webp"><img src="img/icons/tiktok-01.png" alt="tiktok icon"></picture>
+							</a>
+
+							<a target="_blank" href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/tg-01.webp" type="image/webp"><img src="img/icons/tg-01.png" alt="telegram icon"></picture>
+							</a>
+						</div>
+						<div data-spollers="767.98,max" class="right-item__spollers spollers">
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">information</button>
+								<ul class="spollers__body">
+									<li class="spollers__items"><a target="_blank" href="#" class="spollers__link">о нас</a></li>
+									<li class="spollers__items"><a target="_blank" href="#" class="spollers__link">доставка ивозврат</a></li>
+									<li class="spollers__items"><a target="_blank" href="#" class="spollers__link">контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20261005012623"></script>
+</body>
+
+</html>

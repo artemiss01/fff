@@ -5,11 +5,7 @@
 	<title>футболка FKD1/01</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<style>
-		body {
-			overflow: hidden;
-		}
-	</style>
+
 	<style>
 		.preloader {
 			position: fixed;
@@ -49,7 +45,7 @@
 	</style>
 
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20261002003710">
+	<link rel="stylesheet" href="css/style.min.css?_v=20261005012623">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -105,10 +101,10 @@
 								<option value="3">RO</option>
 							</select>
 						</div>
-						<button class="block-info-header__bag bag" type="button" aria-label="shopping cart" translate="no">
+						<a href="bag.html" class="block-info-header__bag bag" aria-label="shopping cart" translate="no">
 							<span class="bag__quentity">22</span>
 							<span class="bag__value-price">$250</span>
-						</button>
+						</a>
 					</div>
 					<button type="button" class="row-header__menu-icon menu-text">
 						<i></i>
@@ -121,10 +117,10 @@
 			</div>
 		</header>
 		<main class="page">
-			<div class="page__breadcrumbs breadcrumbs">
+			<div class="page__breadcrumbs-product breadcrumbs">
 				<div class="breadcrumbs__container">
-					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">главная</a></li>
+					<ul class="breadcrumbs__list breadcrumbs__list_white-color">
+						<li class="breadcrumbs__item"><a href="home.html" class="breadcrumbs__link">главная</a></li>
 						<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">t-shirt</a></li>
 						<li class="breadcrumbs__item">
 							<p class="breadcrumbs__link breadcrumbs__link_active">fkd 01/2</p>
@@ -215,7 +211,7 @@
 									<p class="price__old" translate="no">$55</p>
 								</div>
 								<p class="info-product-order__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, praesentium!</p>
-								<form data-dev action="#" class="info-product-order__form">
+								<form data-dev data-popup-message="#popup-add-bag" action="#" class="info-product-order__form">
 									<div class="info-product-order__size info-size">
 										<div class="info-size__top-row row-info-product">
 											<p class="row-info-product__title">size</p>
@@ -339,7 +335,21 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20261002003710"></script>
+
+	<div id="popup-add-bag" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content content-popup">
+				<button data-close type="button" class="popup-close-btn" aria-label="close popup"></button>
+				<div class="content-popup__decor"></div>
+				<p class="content-popup__title">добавленно в корзину</p>
+				<button type="button" class="content-popup__btn-open-bag btn-bay ">пкрейти в корзину</button>
+				<button data-close type="button" class="content-popup__btn-buy  btn-bay">продолжить покупки</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20261005012623"></script>
 </body>
 
 </html>
