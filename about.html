@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>О бренде</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<style>
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 500;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			height: 100vh;
+			background-color: #050505;
+			overflow: hidden;
+		}
+
+		.preloader img {
+			width: 128px;
+			height: 128px;
+
+			animation: preload-fkd 1s linear infinite;
+		}
+
+
+		@keyframes preload-fkd {
+			0% {
+				transform: scale(1);
+			}
+
+			50% {
+				transform: scale(1.1);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}
+	</style>
+
+
+	<link rel="stylesheet" href="css/style.min.css?_v=20261009014618">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="preloader">
+	<img src="img/icons/preloader.svg" alt="preloader">
+</div>
+
+<body>
+	<div class="wrapper">
+		<header class="header header_black">
+			<div class="header__container">
+				<div class="header__row row-header">
+					<a href="home.html" class="row-header__logo"><picture><source srcset="img/icons/logo-fkd.webp" type="image/webp"><img src="img/icons/logo-fkd.png" alt="logotype fkd"></picture></a>
+					<div class="row-header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item_categories" data-da=".row-header, 767.98, 2">
+									<button type="button" class="menu__link menu__link_arrow">categories</button>
+									<nav class="menu__sub-menu sub-menu">
+										<ul class="sub-menu__items">
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">t-shirt</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">caps</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">shtani</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">hudi</a></li>
+
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">t-shirt</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">caps</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">shtani</a></li>
+											<li class="sub-menu__item"><a href="#" class="sub-menu__link">hudi</a></li>
+										</ul>
+									</nav>
+								</li>
+
+								<li class="menu__item"><a href="/" class="menu__link">conacts</a></li>
+
+							</ul>
+						</nav>
+					</div>
+					<div class="row-header__info-block block-info-header" data-da=".menu__list, 479.98, 0 ">
+						<div class="block-info-header__custom-select" data-da=".menu__list, 767.98, 9" translate="no">
+
+							<select name="money" class="block-info-header__change-money">
+								<option value="1" selected>mdl</option>
+								<option value="2">usd</option>
+								<option value="3">eur</option>
+							</select>
+
+
+							<select name="language" class="block-info-header__language">
+								<option value="1" selected>ru</option>
+								<option value="2">EN</option>
+								<option value="3">RO</option>
+							</select>
+						</div>
+						<a href="bag.html" class="block-info-header__bag bag" aria-label="shopping cart" translate="no">
+							<span class="bag__quentity">22</span>
+							<span class="bag__value-price">$250</span>
+						</a>
+					</div>
+					<button type="button" class="row-header__menu-icon menu-text">
+						<i></i>
+						<div class="menu-text__txt">
+							<span class="menu-text__label-close" translate="no">close</span>
+							<span class="menu-text__label-open" translate="no">menu</span>
+						</div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero-brand brand-hero">
+				<div class="brand-hero__container">
+					<div class="brand-hero__row">
+						<div class="brand-hero__img-ibg">
+							<picture><source data-srcset="img/background/about-brand.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/background/about-brand.png" alt="fkd man"></picture>
+						</div>
+						<div class="brand-hero__info">
+							<h1 class="brand-hero__title">flamekid</h1>
+							<div class="brand-hero__logo-ibg">
+								<picture><source srcset="img/banner-home/title-img.webp" type="image/webp"><img src="img/banner-home/title-img.png" alt="logo"></picture>
+							</div>
+							<h2 class="brand-hero__sub-title">внутреняя свобода</h2>
+							<p>Свобода от рамок и чужих ожиданий. <br>
+								Внутри него горит огонь. <br>
+								Огонь — это его энергия. <br>
+								Кто-то боится своего огня и гасит его, превращаясь в тень. <br>FLAMEKID — нет. <br>
+								Он направляет свою энергию туда, куда хочет сам. <br> <span>У каждого свой путь.</span></p>
+							<a href="#" class="brand-hero__link btn-bay btn-bay_orange">shop now</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__we-are who-we-are">
+				<div class="who-we-are__container">
+					<div class="who-we-are__top-row row-top">
+						<h2 class="row-top__title caption">кто мы?</h2>
+					</div>
+					<div class="who-we-are__row">
+						<div class="who-we-are__item">
+							<div class="who-we-are__card card-about">
+								<div class="card-about__icon card-about__icon_korona"></div>
+								<p class="card-about__txt">Мы не для всех. <br>Мы для тех, кто не ждёт разрешения быть собой.</p>
+							</div>
+						</div>
+						<div class="who-we-are__decor"></div>
+						<div class="who-we-are__item">
+							<div class="who-we-are__card card-about">
+								<div class="card-about__icon card-about__icon_flame"></div>
+								<p class="card-about__txt">Мы не про одежду. <br> Мы про состояние.</p>
+							</div>
+						</div>
+						<div class="who-we-are__decor"></div>
+						<div class="who-we-are__item">
+							<div class="who-we-are__card card-about">
+								<div class="card-about__icon card-about__icon_tamplate"></div>
+								<p class="card-about__txt">Мир живёт по шаблону. <br> Мы — нет.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__galerie galerie">
+				<div class="galerie__slider">
+					<div class="galerie__swiper">
+						<div class="galerie__slide slide-galerie slide-galerie_two-img">
+							<div class="slide-galerie__img-ibg slide-galerie__img-ibg_big">
+								<picture><source data-srcset="img/card-product-img/00000.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/00000.png" alt="fkd"></picture>
+							</div>
+							<div class="slide-galerie__img-ibg slide-galerie__img-ibg_small">
+								<picture><source data-srcset="img/card-product-img/00000.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/00000.png" alt="fkd"></picture>
+							</div>
+						</div>
+						<div class="galerie__slide slide-galerie">
+							<div class="slide-galerie__img-ibg slide-galerie__img-ibg">
+								<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="fkd"></picture>
+							</div>
+						</div>
+						<div class="galerie__slide slide-galerie">
+							<div class="slide-galerie__img-ibg slide-galerie__img-ibg">
+								<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="fkd"></picture>
+							</div>
+						</div>
+						<div class="galerie__slide slide-galerie slide-galerie_two-img">
+							<div class="slide-galerie__img-ibg slide-galerie__img-ibg_small">
+								<picture><source data-srcset="img/card-product-img/00000.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/00000.png" alt="fkd"></picture>
+							</div>
+							<div class="slide-galerie__img-ibg slide-galerie__img-ibg_big">
+								<picture><source data-srcset="img/card-product-img/00000.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/00000.png" alt="fkd"></picture>
+							</div>
+						</div>
+						<div class="galerie__slide slide-galerie">
+							<div class="slide-galerie__img-ibg slide-galerie__img-ibg">
+								<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="fkd"></picture>
+							</div>
+						</div>
+					</div>
+					<div class="galerie__btn-next btn-grey-arrow btn-grey-arrow_next"></div>
+					<div class="galerie__btn-prev btn-grey-arrow btn-grey-arrow_prev"></div>
+				</div>
+				<div class="galerie__swiper-pagination"></div>
+			</div>
+			<div class="page__big-txt-info info-big-txt">
+				<div class="info-big-txt__top-el el-top">
+					<div class="el-top__container">
+						<p class="el-top__text">тренды меняются, <br><span>мы остаемся собой</span></p>
+						<div class="el-top__decor-img-ibg">
+							<img src="img/icons/korona.svg" alt="korona">
+						</div>
+					</div>
+				</div>
+				<div class="info-big-txt__container">
+					<div class="info-big-txt__bottom-row">
+						<p class="info-big-txt__small-txt">We have chosen our way,<span>and you?</span></p>
+						<a href="" class="info-big-txt__btn btn-bay">shop now</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__row">
+					<div class="footer__item-left left-item-footer">
+						<p class="left-item-footer__big-txt">Your inner fire <br> <span> is your energy</span></p>
+						<p class="left-item-footer__small-txt">flamekid - own way</p>
+						<a href="#" class="left-item-footer__link btn-bay btn-bay_orange">shop now</a>
+						<p class="left-item-footer__copyright" data-da=".right-item, 767.98,4">2026 flamekid. all rights reserved</p>
+					</div>
+					<div class="footer__item-img">
+						<div class="footer__wrapper-decor-ibg">
+							<img src="img/icons/fkd-footer.svg" alt="fkd">
+						</div>
+					</div>
+					<div class="footer__item-right right-item">
+						<a href="home.html" class="right-item__logo">flamekid</a>
+						<div class="right-item__social-media media-social">
+
+							<a href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/inst-01.webp" type="image/webp"><img src="img/icons/inst-01.png" alt="instagram icon"></picture>
+							</a>
+
+							<a href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/tiktok-01.webp" type="image/webp"><img src="img/icons/tiktok-01.png" alt="tiktok icon"></picture>
+							</a>
+
+							<a href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/tg-01.webp" type="image/webp"><img src="img/icons/tg-01.png" alt="telegram icon"></picture>
+							</a>
+						</div>
+						<div data-spollers="767.98,max" class="right-item__spollers spollers">
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">information</button>
+								<ul class="spollers__body">
+									<li class="spollers__items"><a href="#" class="spollers__link">о нас</a></li>
+									<li class="spollers__items"><a href="#" class="spollers__link">доставка ивозврат</a></li>
+									<li class="spollers__items"><a href="#" class="spollers__link">контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20261009014618"></script>
+</body>
+
+</html>

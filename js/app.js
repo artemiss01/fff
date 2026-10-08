@@ -6664,6 +6664,22 @@
                 767.98: { slidesPerView: 3.5, spaceBetween: 10 },
                 991.98: { slidesPerView: 5, spaceBetween: 10 },
               },
+            }),
+            new ge(".galerie__slider", {
+              modules: [xe, Ce],
+              autoHeight: !0,
+              pagination: { el: ".galerie__swiper-pagination", clickable: !0 },
+              navigation: {
+                nextEl: ".galerie__btn-next",
+                prevEl: ".galerie__btn-prev",
+              },
+              breakpoints: {
+                320: { slidesPerView: 1.4, spaceBetween: 5 },
+                479.98: { slidesPerView: 2, spaceBetween: 5 },
+                574.98: { slidesPerView: 3, spaceBetween: 5 },
+                767.98: { slidesPerView: 4, spaceBetween: 5 },
+                991.98: { slidesPerView: 5, spaceBetween: 5 },
+              },
             })));
       });
       const ke = function (e) {
