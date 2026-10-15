@@ -45,7 +45,7 @@
 	</style>
 
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20261009014618">
+	<link rel="stylesheet" href="css/style.min.css?_v=20261016001732">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,24 +64,19 @@
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item menu__item_categories" data-da=".row-header, 767.98, 2">
-									<button type="button" class="menu__link menu__link_arrow">categories</button>
-									<nav class="menu__sub-menu sub-menu">
-										<ul class="sub-menu__items">
-											<li class="sub-menu__item"><a href="#" class="sub-menu__link">t-shirt</a></li>
-											<li class="sub-menu__item"><a href="#" class="sub-menu__link">caps</a></li>
-											<li class="sub-menu__item"><a href="#" class="sub-menu__link">shtani</a></li>
-											<li class="sub-menu__item"><a href="#" class="sub-menu__link">hudi</a></li>
-
-											<li class="sub-menu__item"><a href="#" class="sub-menu__link">t-shirt</a></li>
-											<li class="sub-menu__item"><a href="#" class="sub-menu__link">caps</a></li>
-											<li class="sub-menu__item"><a href="#" class="sub-menu__link">shtani</a></li>
-											<li class="sub-menu__item"><a href="#" class="sub-menu__link">hudi</a></li>
+									<a href="category.html" class="menu__link link-for-submenu">categories</a>
+									<button class="menu__arrow arrow-button" aria-label="button orange arrow"></button>
+									<nav class="menu__sub-menu">
+										<ul class="menu__sub-list">
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">t-shirt</a></li>
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">caps</a></li>
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">shtani</a></li>
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">hudi</a></li>
 										</ul>
 									</nav>
 								</li>
 								<li class="menu__item"><a href="about.html" class="menu__link">about us</a></li>
-								<li class="menu__item"><a href="/" class="menu__link">conacts</a></li>
-
+								<li class="menu__item"><a href="contacts.html" class="menu__link">conacts</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -121,6 +116,7 @@
 				<div class="breadcrumbs__container">
 					<ul class="breadcrumbs__list breadcrumbs__list_white-color">
 						<li class="breadcrumbs__item"><a href="home.html" class="breadcrumbs__link">главная</a></li>
+						<li class="breadcrumbs__item"><a href="category.html" class="breadcrumbs__link">catalog</a></li>
 						<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">t-shirt</a></li>
 						<li class="breadcrumbs__item">
 							<p class="breadcrumbs__link breadcrumbs__link_active">fkd 01/2</p>
@@ -218,29 +214,29 @@
 											<button type="button" data-goto=".details-product" class="row-info-product__guide">таблица размеров</button>
 										</div>
 										<div class="info-size__choose">
-											<div class="info-size__btn">
-												<input required type="radio" name="size" id="size-1" class="info-size__input">
-												<label class="info-size__label" for="size-1">xs</label>
+											<div class="info-size__btn choose-size">
+												<input required type="radio" name="size" id="size-1" class="choose-size__input">
+												<label class="choose-size__label" for="size-1">xs</label>
 											</div>
-											<div class="info-size__btn">
-												<input type="radio" name="size" id="size-2" class="info-size__input">
-												<label class="info-size__label" for="size-2">s</label>
+											<div class="info-size__btn choose-size">
+												<input type="radio" name="size" id="size-2" class="choose-size__input">
+												<label class="choose-size__label" for="size-2">s</label>
 											</div>
-											<div class="info-size__btn">
-												<input type="radio" name="size" id="size-3" class="info-size__input">
-												<label class="info-size__label" for="size-3">m</label>
+											<div class="info-size__btn choose-size">
+												<input type="radio" name="size" id="size-3" class="choose-size__input">
+												<label class="choose-size__label" for="size-3">m</label>
 											</div>
-											<div class="info-size__btn">
-												<input type="radio" name="size" id="size-4" class="info-size__input">
-												<label class="info-size__label" for="size-4">l</label>
+											<div class="info-size__btn choose-size">
+												<input type="radio" name="size" id="size-4" class="choose-size__input">
+												<label class="choose-size__label" for="size-4">l</label>
 											</div>
-											<div class="info-size__btn">
-												<input type="radio" name="size" id="size-5" class="info-size__input">
-												<label class="info-size__label" for="size-5">xl</label>
+											<div class="info-size__btn choose-size">
+												<input type="radio" name="size" id="size-5" class="choose-size__input">
+												<label class="choose-size__label" for="size-5">xl</label>
 											</div>
-											<div class="info-size__btn">
-												<input type="radio" name="size" id="size-6" class="info-size__input">
-												<label class="info-size__label" for="size-6">xxl</label>
+											<div class="info-size__btn choose-size">
+												<input type="radio" name="size" id="size-6" class="choose-size__input">
+												<label class="choose-size__label" for="size-6">xxl</label>
 											</div>
 										</div>
 									</div>
@@ -309,7 +305,7 @@
 									<div class="tabs__body">
 										<div class="tabs__row-review row-review">
 											<div data-simplebar class="row-review__feedback feedback">
-												<div class="feedback__title title-feedback title-review">
+												<div class="feedback__title title-feedback title-label title-label_big">
 													<div class="title-feedback__value">1</div>
 													<p class="title-feedback__txt">review for</p>
 													<h3 class="title-feedback__name-product">"Product Name"</h3>
@@ -434,17 +430,17 @@
 													</p>
 												</div>
 											</div>
-											<form data-dev data-popup-message="#popup-add-review" action="#" class="row-review__form form-review">
-												<h3 class="form-review__title title-review">Write a review</h3>
-												<div class="form-review__wrapper-input">
-													<h4 class="form-review__label-input title-label">name <span>*</span></h4>
-													<input data-required data-validate autocomplete="off" type="text" name="form[]" data-error="plese enter name" placeholder="your name" class="form-review__input-name input-review">
+											<form data-dev data-popup-message="#popup-add-review" action="#" class="row-review__form form-fkd">
+												<h3 class="form-review__title title-label title-label_big">Write a review</h3>
+												<div class="form-fkd__wrapper-input">
+													<h4 class="form-fkd__label-title title-label">имя<span>*</span></h4>
+													<input data-required data-validate type="text" name="form[]" data-error="пожалуйста введите ваше имя" placeholder="ваше имя" class="form-fkd__input">
 												</div>
-												<div class="form-review__wrapper-input">
-													<h4 class="form-review__label-input title-label">ваш отзыв</h4>
-													<textarea data-simplebar name="#" class="form-review__input-txt input-review" data-error="please enter review" placeholder="your review"></textarea>
+												<div class="form-fkd__wrapper-input">
+													<h4 class="form-fkd__label-title title-label">оставьте отзыв</h4>
+													<textarea data-simplebar placeholder="отзыв" class="form-fkd__input form-fkd__input_textarea"></textarea>
 												</div>
-												<div class="form-review__rating rating-tabs">
+												<div class="form-fkd__rating rating-tabs">
 													<h4 class="rating-tabs__title title-label">your rating <span>*</span></h4>
 													<div class="rating-tabs__items">
 														<div class="rating-tabs__item">
@@ -469,12 +465,13 @@
 														</div>
 													</div>
 												</div>
-												<button type="submit" class="form-review__btn btn-bay">Отправить send</button>
+												<div class="capcha"></div>
+												<button type="submit" class="form-fkd__btn btn-bay">отправить send</button>
 											</form>
 										</div>
 									</div>
-									<div class="tabs__body sizes-product">
-										<div class="sizes-product__img-ibg">
+									<div class="tabs__body sizes-table">
+										<div class="sizes-table__img-ibg">
 											<picture><source data-srcset="img/card-product-img/00000.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/00000.png" alt="sizes product"></picture>
 										</div>
 									</div>
@@ -618,7 +615,7 @@
 								<button type="button" data-spoller class="spollers__title">information</button>
 								<ul class="spollers__body">
 									<li class="spollers__items"><a href="#" class="spollers__link">о нас</a></li>
-									<li class="spollers__items"><a href="#" class="spollers__link">доставка ивозврат</a></li>
+									<li class="spollers__items"><a href="return.html" class="spollers__link">возврат</a></li>
 									<li class="spollers__items"><a href="#" class="spollers__link">контакты</a></li>
 								</ul>
 							</div>
@@ -646,14 +643,25 @@
 			<div class="popup__content content-popup">
 				<button data-close type="button" class="popup-close-btn" aria-label="close popup"></button>
 				<div class="content-popup__decor"></div>
-				<p class="content-popup__title">отзыв добавлен</p>
+				<p class="content-popup__title">отзыв отправлен на модерацию</p>
+				<p class="content-popup__title">благодарим за обратную связь</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-send-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content content-popup">
+				<button data-close type="button" class="popup-close-btn" aria-label="close popup"></button>
+				<div class="content-popup__decor"></div>
+				<p class="content-popup__title">сообщение отправлено</p>
 				<p class="content-popup__title">благодарим за обратную связь</p>
 			</div>
 		</div>
 	</div>
 
 
-	<script src="js/app.min.js?_v=20261009014618"></script>
+	<script src="js/app.min.js?_v=20261016001732"></script>
 </body>
 
 </html>

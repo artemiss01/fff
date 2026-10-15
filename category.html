@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Category</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<style>
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 500;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			height: 100vh;
+			background-color: #050505;
+			overflow: hidden;
+		}
+
+		.preloader img {
+			width: 128px;
+			height: 128px;
+
+			animation: preload-fkd 1s linear infinite;
+		}
+
+
+		@keyframes preload-fkd {
+			0% {
+				transform: scale(1);
+			}
+
+			50% {
+				transform: scale(1.1);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}
+	</style>
+
+
+	<link rel="stylesheet" href="css/style.min.css?_v=20261016001732">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="preloader">
+	<img src="img/icons/preloader.svg" alt="preloader">
+</div>
+
+<body>
+	<div class="wrapper">
+		<header class="header header_black">
+			<div class="header__container">
+				<div class="header__row row-header">
+					<a href="home.html" class="row-header__logo"><picture><source srcset="img/icons/logo-fkd.webp" type="image/webp"><img src="img/icons/logo-fkd.png" alt="logotype fkd"></picture></a>
+					<div class="row-header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item_categories" data-da=".row-header, 767.98, 2">
+									<a href="category.html" class="menu__link link-for-submenu">categories</a>
+									<button class="menu__arrow arrow-button" aria-label="button orange arrow"></button>
+									<nav class="menu__sub-menu">
+										<ul class="menu__sub-list">
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">t-shirt</a></li>
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">caps</a></li>
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">shtani</a></li>
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">hudi</a></li>
+										</ul>
+									</nav>
+								</li>
+								<li class="menu__item"><a href="about.html" class="menu__link">about us</a></li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">conacts</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="row-header__info-block block-info-header" data-da=".menu__list, 479.98, 0 ">
+						<div class="block-info-header__custom-select" data-da=".menu__list, 767.98, 9" translate="no">
+
+							<select name="money" class="block-info-header__change-money">
+								<option value="1" selected>mdl</option>
+								<option value="2">usd</option>
+								<option value="3">eur</option>
+							</select>
+
+
+							<select name="language" class="block-info-header__language">
+								<option value="1" selected>ru</option>
+								<option value="2">EN</option>
+								<option value="3">RO</option>
+							</select>
+						</div>
+						<a href="bag.html" class="block-info-header__bag bag" aria-label="shopping cart" translate="no">
+							<span class="bag__quentity">22</span>
+							<span class="bag__value-price">$250</span>
+						</a>
+					</div>
+					<button type="button" class="row-header__menu-icon menu-text">
+						<i></i>
+						<div class="menu-text__txt">
+							<span class="menu-text__label-close" translate="no">close</span>
+							<span class="menu-text__label-open" translate="no">menu</span>
+						</div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__category category-page">
+				<div class="category-page__container">
+					<div class="category-page__row">
+						<div class="category-page__content">
+							<h1 class="category-page__title">Lorem ipsum, dolor sit amet consectetur</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, tenetur!</p>
+							<div class="category-page__quentity-products">24 products</div>
+						</div>
+						<div class="category-page__img-ibg">
+							<picture><source srcset="img/background/fkd03.webp" type="image/webp"><img src="img/background/fkd03.jpg" alt="fkd banner"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__products-block block-products">
+				<div class="block-products__container">
+					<div class="block-products__row-content">
+						<aside class="block-products__filters filters">
+							<div class="filters__mob-header mob-header-filtres">
+								<h2 class="mob-header-filtres__title">filtres</h2>
+								<button class="mob-header-filtres__btn"></button>
+							</div>
+							<h2 class="filters__title">filters</h2>
+							<div class="filters__body">
+								<div data-spollers="767.98,max" class="filters__category spollers">
+									<div class="spollers__item">
+										<h3 data-spoller class="spollers__title">category</h3>
+										<form class="spollers__body body-spollers body-spollers ">
+											<div class="body-spollers__content body-spollers__content_category">
+												<div class="body-spollers__el el-spollers">
+													<input type="checkbox" id="t-shirts" name="form[]" class="el-spollers__checkbox">
+													<label for="t-shirts" class="el-spollers__label">футболки</label>
+												</div>
+												<div class="body-spollers__el el-spollers">
+													<input type="checkbox" id="trousers" name="form[]" class="el-spollers__checkbox">
+													<label for="trousers" class="el-spollers__label">trousers</label>
+												</div>
+												<div class="body-spollers__el el-spollers">
+													<input type="checkbox" id="hoodies" name="form[]" class="el-spollers__checkbox">
+													<label for="hoodies" class="el-spollers__label">hoodies</label>
+												</div>
+												<div class="body-spollers__el el-spollers">
+													<input type="checkbox" id="caps" name="form[]" class="el-spollers__checkbox">
+													<label for="caps" class="el-spollers__label">кепки</label>
+												</div>
+												<div class="body-spollers__el el-spollers">
+													<input type="checkbox" id="accessories" name="form[]" class="el-spollers__checkbox">
+													<label for="accessories" class="el-spollers__label">асексуары</label>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div data-spollers="767.98,max" class="filters__category spollers">
+									<div class="spollers__item">
+										<h3 data-spoller class="spollers__title">размер</h3>
+										<form class="spollers__body body-spollers">
+											<div class="body-spollers__content body-spollers__content_size">
+												<div class="body-spollers__el filter-size">
+													<input type="checkbox" id="size-1" name="form[]" class="filter-size__checkbox">
+													<label for="size-1" class="filter-size__label" translate="no">xs</label>
+												</div>
+												<div class="body-spollers__el filter-size">
+													<input type="checkbox" id="size-2" name="form[]" class="filter-size__checkbox">
+													<label for="size-2" class="filter-size__label" translate="no">s</label>
+												</div>
+												<div class="body-spollers__el  filter-size">
+													<input type="checkbox" id="size-3" name="form[]" class="filter-size__checkbox">
+													<label for="size-3" class="filter-size__label" translate="no">m</label>
+												</div>
+												<div class="body-spollers__el filter-size">
+													<input type="checkbox" id="size-4" name="form[]" class="filter-size__checkbox">
+													<label for="size-4" class="filter-size__label" translate="no">l</label>
+												</div>
+												<div class="body-spollers__el  filter-size">
+													<input type="checkbox" id="size-5" name="form[]" class="filter-size__checkbox">
+													<label for="size-5" class="filter-size__label" translate="no">xl</label>
+												</div>
+												<div class="body-spollers__el  filter-size">
+													<input type="checkbox" id="size-6" name="form[]" class="filter-size__checkbox">
+													<label for="size-6" class="filter-size__label" translate="no">xxl</label>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div data-spollers="767.98,max" class="filters__category spollers">
+									<div class="spollers__item">
+										<h3 data-spoller class="spollers__title">color</h3>
+										<form class="spollers__body body-spollers">
+											<div class="body-spollers__content body-spollers__content_color">
+												<div class="body-spollers__el  filter-color">
+													<input type="checkbox" id="color-1" name="form[]" class="filter-color__checkbox">
+												</div>
+												<div class="body-spollers__el  filter-color">
+													<input type="checkbox" id="color-2" name="form[]" class="filter-color__checkbox">
+												</div>
+												<div class="body-spollers__el  filter-color">
+													<input type="checkbox" id="color-3" name="form[]" class="filter-color__checkbox">
+												</div>
+												<div class="body-spollers__el  filter-color">
+													<input type="checkbox" id="color-4" name="form[]" class="filter-color__checkbox">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div data-spollers="767.98,max" class="filters__category spollers">
+									<div class="spollers__item">
+										<h3 data-spoller class="spollers__title">drop</h3>
+										<form class="spollers__body body-spollers">
+											<div class="body-spollers__content body-spollers__content_category">
+												<div class="body-spollers__el el-spollers">
+													<input type="checkbox" id="drop-1" name="form[]" class="el-spollers__checkbox">
+													<label for="drop-1" class="el-spollers__label" translate="no">drop-1</label>
+												</div>
+												<div class="body-spollers__el el-spollers">
+													<input type="checkbox" id="drop-2" name="form[]" class="el-spollers__checkbox">
+													<label for="drop-2" class="el-spollers__label" translate="no">drop-2</label>
+												</div>
+												<div class="body-spollers__el el-spollers">
+													<input type="checkbox" id="drop-3" name="form[]" class="el-spollers__checkbox">
+													<label for="drop-3" class="el-spollers__label" translate="no">drop-3</label>
+												</div>
+												<div class="body-spollers__el el-spollers">
+													<input type="checkbox" id="limited" name="form[]" class="el-spollers__checkbox">
+													<label for="limited" class="el-spollers__label" translate="no">limited</label>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div data-da=".cards,767.98,14" class="filter__promo-banner banner-promo">
+								<a href="#" class="banner-promo__img-ibg">
+									<picture><source srcset="img/background/banner.webp" type="image/webp"><img src="img/background/banner.jpg" alt="banner"></picture>
+								</a>
+							</div>
+						</aside>
+						<div class="block-products__cards">
+							<div class="block-products__top-row">
+								<button class="block-products__mob-btn-filter">filters</button>
+								<select name="form[]" class="block-products__sorting">
+									<option value="1" selected>Lorem ipsum dolor sit.</option>
+									<option value="2">Lorem, ipsum dolor.</option>
+									<option value="3">lorem4</option>
+									<option value="4">по рейтингу</option>
+								</select>
+							</div>
+							<div class="block-products__cards cards">
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="cards__item product-card">
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__img-link card-ibg">
+											<picture><source data-srcset="img/card-product-img/1111111.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/lazy.svg" data-src="img/card-product-img/1111111.png" alt="t-shirt-fkd"></picture>
+										</a>
+										<div class="product-card__info info-product">
+											<div class="info-product__top-row">
+												<a href="product.html" class="info-product__title card-title" translate="no">fkd 01</a>
+												<div class="info-product__price-row row-price" translate="no">
+													<h3 class="row-price__new card-price">$49</h3>
+													<p class="row-price__old">$55</p>
+												</div>
+											</div>
+											<p class="info-product__sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quos?
+											</p>
+											<div class="info-product__bottom">
+												<div class="info-product__rating show-rating">
+													<div class="show-rating__items">
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+														<span class="show-rating__item-fire show-rating__item-fire_empty"></span>
+													</div>
+													<span class="show-rating__quentity">(128)</span>
+												</div>
+
+												<a href="product.html" class="info-product__bay-btn btn-bay">Buy now</a>
+											</div>
+										</div>
+									</div>
+								</article>
+
+							</div>
+							<ul class="block-products__paging paging">
+								<li class="paging__item"><button type="button" class="paging__btn paging-active">1</button></li>
+								<li class="paging__item"><button type="button" class="paging__btn">2</button></li>
+								<li class="paging__item"><button type="button" class="paging__btn">3</button></li>
+								<li class="paging__item"><button type="button" class="paging__btn">4</button></li>
+								<li class="paging__item"><button type="button" class="paging__btn">5</button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__row">
+					<div class="footer__item-left left-item-footer">
+						<p class="left-item-footer__big-txt">Your inner fire <br> <span> is your energy</span></p>
+						<p class="left-item-footer__small-txt">flamekid - own way</p>
+						<a href="#" class="left-item-footer__link btn-bay btn-bay_orange">shop now</a>
+						<p class="left-item-footer__copyright" data-da=".right-item, 767.98,4">2026 flamekid. all rights reserved</p>
+					</div>
+					<div class="footer__item-img">
+						<div class="footer__wrapper-decor-ibg">
+							<img src="img/icons/fkd-footer.svg" alt="fkd">
+						</div>
+					</div>
+					<div class="footer__item-right right-item">
+						<a href="home.html" class="right-item__logo">flamekid</a>
+						<div class="right-item__social-media media-social">
+
+							<a href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/inst-01.webp" type="image/webp"><img src="img/icons/inst-01.png" alt="instagram icon"></picture>
+							</a>
+
+							<a href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/tiktok-01.webp" type="image/webp"><img src="img/icons/tiktok-01.png" alt="tiktok icon"></picture>
+							</a>
+
+							<a href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/tg-01.webp" type="image/webp"><img src="img/icons/tg-01.png" alt="telegram icon"></picture>
+							</a>
+						</div>
+						<div data-spollers="767.98,max" class="right-item__spollers spollers">
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">information</button>
+								<ul class="spollers__body">
+									<li class="spollers__items"><a href="#" class="spollers__link">о нас</a></li>
+									<li class="spollers__items"><a href="return.html" class="spollers__link">возврат</a></li>
+									<li class="spollers__items"><a href="#" class="spollers__link">контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20261016001732"></script>
+</body>
+
+</html>
