@@ -45,7 +45,7 @@
 	</style>
 
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20261016001732">
+	<link rel="stylesheet" href="css/style.min.css?_v=20261023004917">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,9 +117,13 @@
 					<div class="content-bag__top-row row-top">
 						<h1 class="row-top__title caption">моя корзина my bag</h1>
 					</div>
+					<div class="content-bag__alert alert _alert-active">
+						<p class="alert__text">в корзине есть недоступные товары</p>
+					</div>
+					<p class="content-bag__info-empty-bag">ваша корзина пуста</p>
 					<div class="content-bag__row">
 						<div class="content-bag__left-column column-left-bag">
-							<div class="column-left-bag__product product-bag">
+							<div class="column-left-bag__product product-bag _unavailable">
 								<div class="product-bag__card">
 									<a href="product.html" class="product-bag__img-ibg">
 										<picture><source data-srcset="img/card-product-img/000010.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="img/icons/fkd-lazy.svg" data-src="img/card-product-img/000010.png" alt="t-shirt"></picture>
@@ -146,6 +150,12 @@
 											<div class="price-product-bag__money" translate="no">$90</div>
 										</div>
 										<button type="button" class="product-bag__btn-remove btn-bay">удалить из корзины</button>
+									</div>
+								</div>
+								<div class="product-bag__stock-no no-stock">
+									<div class="no-stock__info">
+										<p class="no-stock__title">товар не доступен</p>
+										<button class="no-stock__remove-btn btn-bay btn-bay_orange">удалить из корзины</button>
 									</div>
 								</div>
 							</div>
@@ -398,10 +408,62 @@
 									<div class="info-quentity__product-quentity">99</div>
 								</div>
 								<div class="column-right__price price-order info-card-bag">
-									<div class="price-order__title">итоговая ценна</div>
+									<div class="price-order__title">ценна</div>
 									<div class="price-order__price">$147</div>
 								</div>
-								<p class="column-right__additional-info">внимание ценна без учета доставки, стоимость доставки появиться при оформлении заказа при выборе страны</p>
+								<div class="column-right__promo-code code-promo">
+									<h3 class="code-promo__title">промокод</h3>
+									<form class="code-promo__form">
+										<input autocomplete="off" type="text" class="code-promo__input" name="coupon" placeholder="введите промокод">
+										<button type="submit" class="code-promo__btn"></button>
+									</form>
+								</div>
+								<div class="column-right__shiping shiping">
+									<div data-spollers class="shiping__spollers spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Расчет стоимости доставки</button>
+											<form data-dev data-popup-message="#modal-shipping" autocomplete="off" class="spollers__body form-shipping">
+												<div class="form-shipping__item form-shipping__item_country">
+													<label for="input-country" class="form-shipping__label">страна <span>*</span></label>
+													<select data-required data-scroll name="country_id" class="form-shipping__select" id="input-country" data-error="выберите страну">
+														<option value="" selected>--выберите--</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
+												<div class="form-shipping__item">
+													<label for="input-zone" class="form-shipping__label">регион/область <span>*</span></label>
+													<select data-required data-scroll name="zone_id" class="form-shipping__select" id="input-zone" data-error="выберите регион/область">
+														<option value="" selected>--выберите--</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
+												<div class="form-shipping__item">
+													<label for="input-postcode" class="form-shipping__label">почтовый индекс</label>
+													<input data-required type="text" name="postcode" id="input-postcode" class="form-shipping__poscode" placeholder="введите индекс" data-error="введите индекс">
+												</div>
+												<button type="submit" id="button-quote" class="form-shipping__btn">узнать цены</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="column-right__price price-order info-card-bag">
+									<div class="price-order__title">доставка</div>
+									<div class="price-order__price">$30</div>
+								</div>
+								<div class="column-right__price column-right__price_total price-order info-card-bag">
+									<div class="price-order__title">итоговая цена</div>
+									<div class="price-order__price price-order__price_big-price">$30</div>
+								</div>
 								<button type="submit" class="column-right__checkout btn-bay btn-bay_orange">перейти к оформлению заказа</button>
 								<a href="#" class="column-right__continue-shop">продолжить покупки</a>
 								<div class="column-right__icons-row row-icons-product">
@@ -469,7 +531,27 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20261016001732"></script>
+	<div id="modal-shipping" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<form class="popup__content content-popup">
+				<button data-close type="button" class="popup-close-btn" aria-label="close popup"></button>
+				<div class="content-popup__title">Варианты доставки</div>
+				<div class="content-popup__subtitle">Пожалуйста, выберите предпочтительный способ доставки для этого заказа.</div>
+				<p>Бесплатная доставка</p>
+				<div class="content-popup__check-form form-check">
+					<input type="radio" name="shipping_method" value="free.free" id="input-shipping-method-free-free">
+					<label for="input-shipping-method-free-free">Бесплатная доставка - 0р.</label>
+				</div>
+				<p>Фиксированная стоимость доставки</p>
+				<div class="content-popup__check-form form-check">
+					<input type="radio" name="shipping_method" value="flat.flat" id="input-shipping-method-flat-flat">
+					<label for="input-shipping-method-flat-flat">Доставка с фиксированной стоимостью доставки - 5р</label>
+				</div>
+				<button data-close type="submit" id="button-shipping-method" class="content-popup__btn-shiping btn-bay btn-bay_orange">применить доставку</button>
+			</form>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20261023004917"></script>
 </body>
 
 </html>

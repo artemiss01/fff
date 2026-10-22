@@ -45,7 +45,7 @@
 	</style>
 
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20261016001732">
+	<link rel="stylesheet" href="css/style.min.css?_v=20261023004917">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -191,7 +191,7 @@
 						</div>
 						<div class="order-product__riight-item info-product-order">
 							<div class="info-product-order__body">
-								<p class="info-product-order__title" translate="no">fkd 01/1</p>
+								<h2 class="info-product-order__title" translate="no">fkd 01/1</h2>
 								<div class="info-product-order__rating show-rating">
 									<div class="show-rating__items">
 										<span class="show-rating__item-fire"></span>
@@ -207,15 +207,29 @@
 									<p class="price__old" translate="no">$55</p>
 								</div>
 								<p class="info-product-order__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, praesentium!</p>
+								<div class="info-product-order__aditional aditional-info">
+									<a href="#" class="aditional-info__drop">drop-1</a>
+									<div class="aditional-info__item">
+										<div class="aditional-info__name">цвет:</div>
+										<div class="aditional-info__value"> черный</div>
+									</div>
+									<div class="aditional-info__item">
+										<div class="aditional-info__value aditional-info__value_stock"> есть в наличии</div>
+									</div>
+									<div class="aditional-info__item">
+										<div class="aditional-info__name">лимит:</div>
+										<div class="aditional-info__value aditional-info__value_limit"> 100</div>
+									</div>
+								</div>
 								<form data-dev data-popup-message="#popup-add-bag" action="#" class="info-product-order__form">
 									<div class="info-product-order__size info-size">
 										<div class="info-size__top-row row-info-product">
-											<p class="row-info-product__title">size</p>
+											<h3 class="row-info-product__title">size</h3>
 											<button type="button" data-goto=".details-product" class="row-info-product__guide">таблица размеров</button>
 										</div>
 										<div class="info-size__choose">
-											<div class="info-size__btn choose-size">
-												<input required type="radio" name="size" id="size-1" class="choose-size__input">
+											<div class="info-size__btn choose-size _no-size">
+												<input disabled required type="radio" name="size" id="size-1" class="choose-size__input">
 												<label class="choose-size__label" for="size-1">xs</label>
 											</div>
 											<div class="info-size__btn choose-size">
@@ -238,22 +252,6 @@
 												<input type="radio" name="size" id="size-6" class="choose-size__input">
 												<label class="choose-size__label" for="size-6">xxl</label>
 											</div>
-										</div>
-									</div>
-									<div class="info-product-order__color color-choose">
-										<div class="color-choose__row row-info-product">
-											<p class="row-info-product__title">цвет</p>
-										</div>
-										<div class="color-choose__wrapper-btn">
-											<div class="color-choose__btn color-choose__btn_black" title="black">
-												<input required type="radio" name="color" id="color-1" class="color-choose__input">
-												<label class="color-choose__label" for="color-1"></label>
-											</div>
-											<div class="color-choose__btn color-choose__btn_white" title="white">
-												<input type="radio" name="color" value="white" id="color-2" class="color-choose__input">
-												<label class="color-choose__label" for="color-2"></label>
-											</div>
-
 										</div>
 									</div>
 									<div class="info-product-order__btns">
@@ -301,6 +299,21 @@
 											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit minima eaque voluptatem maiores consequatur nihil incidunt maxime a, illo assumenda doloremque. Neque, non? Atque cum repudiandae obcaecati sequi, est reiciendis eius consequatur cumque quae inventore cupiditate nesciunt nobis reprehenderit magnam nam
 											quisquam dolores veritatis! Vitae deleniti architecto laborum eveniet vero.
 										</p>
+										<div class="description-tab__fabric-composition composition-fabric">
+											<h4 class="composition-fabric__title">состав</h4>
+											<div class="composition-fabric__item">
+												<div class="composition-fabric__name">хлопок:</div>
+												<div class="composition-fabric__value">95%</div>
+											</div>
+											<div class="composition-fabric__item">
+												<div class="composition-fabric__name">эластан:</div>
+												<div class="composition-fabric__value">5%</div>
+											</div>
+											<div class="composition-fabric__item">
+												<div class="composition-fabric__name">плотность:</div>
+												<div class="composition-fabric__value">180/m2</div>
+											</div>
+										</div>
 									</div>
 									<div class="tabs__body">
 										<div class="tabs__row-review row-review">
@@ -444,7 +457,7 @@
 													<h4 class="rating-tabs__title title-label">your rating <span>*</span></h4>
 													<div class="rating-tabs__items">
 														<div class="rating-tabs__item">
-															<input required id="r-1" class="rating-tabs__input" type="radio" value="1" name="rating">
+															<input id="r-1" class="rating-tabs__input" type="radio" value="1" name="rating">
 															<label for="r-1" class="rating-tabs__label"><span>1</span></label>
 														</div>
 														<div class="rating-tabs__item">
@@ -460,7 +473,7 @@
 															<label for="r-4" class="rating-tabs__label"><span>4</span></label>
 														</div>
 														<div class="rating-tabs__item">
-															<input id="r-5" class="rating-tabs__input" type="radio" value="5" name="rating">
+															<input required id="r-5" class="rating-tabs__input" type="radio" value="5" name="rating">
 															<label for="r-5" class="rating-tabs__label"><span>5</span></label>
 														</div>
 													</div>
@@ -661,7 +674,7 @@
 	</div>
 
 
-	<script src="js/app.min.js?_v=20261016001732"></script>
+	<script src="js/app.min.js?_v=20261023004917"></script>
 </body>
 
 </html>

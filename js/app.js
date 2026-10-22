@@ -504,8 +504,8 @@
             I(e).forEach(t);
           },
           $ = [r],
-          N = [r, c],
-          q = [r, l, o],
+          q = [r, c],
+          N = [r, l, o],
           B = [u],
           V = (e) => !!e[d],
           H = (e) => e[d],
@@ -550,9 +550,9 @@
           U = {
             IMG: (e, t) => {
               (z(e, (e) => {
-                (W(e, q), X(e, t));
+                (W(e, N), X(e, t));
               }),
-                W(e, q),
+                W(e, N),
                 X(e, t));
             },
             IFRAME: (e, t) => {
@@ -562,7 +562,7 @@
               (D(e, (e) => {
                 (W(e, $), Y(e, r, y(e, t.data_src)));
               }),
-                W(e, N),
+                W(e, q),
                 Y(e, c, y(e, t.data_poster)),
                 Y(e, r, y(e, t.data_src)),
                 e.load());
@@ -632,7 +632,7 @@
                       A(t, s.class_error),
                       S(t, f),
                       L(s.callback_error, t, i),
-                      s.restore_on_error && R(t, q),
+                      s.restore_on_error && R(t, N),
                       n || J(s, i));
                   })(0, e, t, s),
                     te(i));
@@ -685,9 +685,9 @@
           },
           re = (e) => {
             (z(e, (e) => {
-              R(e, q);
+              R(e, N);
             }),
-              R(e, q));
+              R(e, N));
           },
           le = {
             IMG: re,
@@ -698,7 +698,7 @@
               (D(e, (e) => {
                 R(e, $);
               }),
-                R(e, N),
+                R(e, q),
                 e.load());
             },
             OBJECT: (e) => {
@@ -2120,7 +2120,7 @@
             ? s.createPolicy("html", { createHTML: (e) => e }).createHTML(t)
             : t;
       }
-      function N() {
+      function q() {
         return (
           g ||
             (g =
@@ -2133,12 +2133,12 @@
           g
         );
       }
-      function q(e = {}) {
+      function N(e = {}) {
         return (
           v ||
             (v = (function ({ userAgent: e } = {}) {
               if ("undefined" == typeof window) return { ios: !1, android: !1 };
-              const t = N(),
+              const t = q(),
                 s = navigator.platform,
                 i = e || navigator.userAgent,
                 n = { ios: !1, android: !1 },
@@ -2162,7 +2162,7 @@
             (b = (function () {
               if ("undefined" == typeof window)
                 return { isSafari: !1, isWebView: !1, need3dFix: !1 };
-              const e = q(),
+              const e = N(),
                 t = navigator.userAgent,
                 s = t.toLowerCase(),
                 i =
@@ -3402,13 +3402,13 @@
             : (z = c);
           const D = "next" === i || !i,
             $ = "prev" === i || !i;
-          let N = 0,
-            q = 0;
+          let q = 0,
+            N = 0;
           const B =
             (_ ? (u[c].column ?? 0) : c) +
             (w && void 0 === n ? (g ? -S / 2 + 0.5 : 0) - C : 0);
           if (B < A) {
-            N = Math.max(A - B, E);
+            q = Math.max(A - B, E);
             for (let e = 0; e < A - B; e += 1) {
               const t = e - Math.floor(e / P) * P;
               if (_) {
@@ -3418,9 +3418,9 @@
               } else M.push(P - t - 1);
             }
           } else if (B + S > P - A) {
-            ((q = Math.max(B - (P - 2 * A), E)),
-              I && (q = Math.max(q, S - P + y + 1)));
-            for (let e = 0; e < q; e += 1) {
+            ((N = Math.max(B - (P - 2 * A), E)),
+              I && (N = Math.max(N, S - P + y + 1)));
+            for (let e = 0; e < N; e += 1) {
               const t = e - Math.floor(e / P) * P;
               _
                 ? u.forEach((e, s) => {
@@ -3466,10 +3466,10 @@
             if (M.length > 0 && $) {
               if (void 0 === t) {
                 const e = d.slidesGrid[z],
-                  t = d.slidesGrid[z + N] - e;
+                  t = d.slidesGrid[z + q] - e;
                 o
                   ? d.setTranslate(d.translate - t)
-                  : (d.slideTo(z + Math.ceil(N), 0, !1, !0),
+                  : (d.slideTo(z + Math.ceil(q), 0, !1, !0),
                     n &&
                       ((d.touchEventsData.startTranslate =
                         d.touchEventsData.startTranslate - t),
@@ -3483,10 +3483,10 @@
             } else if (k.length > 0 && D)
               if (void 0 === t) {
                 const e = d.slidesGrid[z],
-                  t = d.slidesGrid[z - q] - e;
+                  t = d.slidesGrid[z - N] - e;
                 o
                   ? d.setTranslate(d.translate - t)
-                  : (d.slideTo(z - q, 0, !1, !0),
+                  : (d.slideTo(z - N, 0, !1, !0),
                     n &&
                       ((d.touchEventsData.startTranslate =
                         d.touchEventsData.startTranslate - t),
@@ -4765,8 +4765,8 @@
           }
           const i = this;
           ((i.__swiper__ = !0),
-            (i.support = N()),
-            (i.device = q({ userAgent: s.userAgent ?? void 0 })),
+            (i.support = q()),
+            (i.device = N({ userAgent: s.userAgent ?? void 0 })),
             (i.browser = B()),
             (i.eventsListeners = {}),
             (i.eventsAnyListeners = []),
@@ -6676,9 +6676,9 @@
         for (var t = e.length; t-- && De.test(e.charAt(t)););
         return t;
       };
-      var Ne = /^\s+/;
-      const qe = function (e) {
-        return e ? e.slice(0, $e(e) + 1).replace(Ne, "") : e;
+      var qe = /^\s+/;
+      const Ne = function (e) {
+        return e ? e.slice(0, $e(e) + 1).replace(qe, "") : e;
       };
       const Be = Ie.Symbol;
       var Ve = Object.prototype,
@@ -6727,7 +6727,7 @@
           e = Me(t) ? t + "" : t;
         }
         if ("string" != typeof e) return 0 === e ? e : +e;
-        e = qe(e);
+        e = Ne(e);
         var s = Ze.test(e);
         return s || Ke.test(e)
           ? et(e.slice(2), s ? 2 : 8)
@@ -7955,53 +7955,54 @@
       document.querySelector(".block-products__mob-btn-filter");
       const Dt = document.querySelector(".filters"),
         $t = document.querySelector(".menu__sub-menu"),
-        Nt = document.querySelector(".link-for-submenu"),
-        qt = document.querySelector(".arrow-button");
-      let Bt;
-      ($t && Nt && qt && qt.classList.add("_btn-visible"),
-        document.addEventListener("click", function (e) {
-          ((Bt = e.target),
-            qt &&
-              Bt.closest(".arrow-button") &&
-              ($t.classList.toggle("_sub-menu-open"),
-              qt.classList.toggle("_btn-rotate")),
-            Bt.closest(".quantity-btn__plus") &&
-              (It++,
-              1 == It
-                ? Pt && Pt.classList.add("_btn-disable")
-                : Pt.classList.remove("_btn-disable"),
-              (zt.value = It)),
-            Bt.closest(".quantity-btn__minus") &&
-              (It--,
-              1 == It
-                ? Pt && Pt.classList.add("_btn-disable")
-                : Pt.classList.remove("_btn-disable"),
-              (zt.value = It),
-              It <= 0
-                ? (console.log(zt.value),
-                  (It = 1),
-                  (zt.value = It),
-                  Pt.classList.add("_btn-disable"))
-                : Pt.classList.remove("_btn-disable")),
-            Bt.closest(".block-products__mob-btn-filter") &&
-              Dt &&
-              (Dt.classList.add("_open-filtres"),
-              document.documentElement.classList.add("lock")),
-            Bt.closest(".mob-header-filtres__btn") &&
-              (Dt.classList.remove("_open-filtres"),
-              document.documentElement.classList.remove("lock")),
-            (function () {
-              if (Bt.closest(".paging__item")) {
-                let e = document.querySelectorAll(".paging__btn");
-                e &&
-                  (e.forEach((e) => {
-                    e.classList.contains("paging-active") &&
-                      e.classList.remove("paging-active");
-                  }),
-                  Bt.classList.add("paging-active"));
-              }
-            })());
-        }),
+        qt = document.querySelector(".link-for-submenu"),
+        Nt = document.querySelector(".arrow-button");
+      $t && qt && Nt && Nt.classList.add("_btn-visible");
+      let Bt,
+        Vt = document.querySelectorAll("[data-color]");
+      (document.addEventListener("click", function (e) {
+        ((Bt = e.target),
+          Nt &&
+            Bt.closest(".arrow-button") &&
+            ($t.classList.toggle("_sub-menu-open"),
+            Nt.classList.toggle("_btn-rotate")),
+          Bt.closest(".quantity-btn__plus") &&
+            (It++,
+            1 == It
+              ? Pt && Pt.classList.add("_btn-disable")
+              : Pt.classList.remove("_btn-disable"),
+            (zt.value = It)),
+          Bt.closest(".quantity-btn__minus") &&
+            (It--,
+            1 == It
+              ? Pt && Pt.classList.add("_btn-disable")
+              : Pt.classList.remove("_btn-disable"),
+            (zt.value = It),
+            It <= 0
+              ? (console.log(zt.value),
+                (It = 1),
+                (zt.value = It),
+                Pt.classList.add("_btn-disable"))
+              : Pt.classList.remove("_btn-disable")),
+          Bt.closest(".block-products__mob-btn-filter") &&
+            Dt &&
+            (Dt.classList.add("_open-filtres"),
+            document.documentElement.classList.add("lock")),
+          Bt.closest(".mob-header-filtres__btn") &&
+            (Dt.classList.remove("_open-filtres"),
+            document.documentElement.classList.remove("lock")),
+          (function () {
+            if (Bt.closest(".paging__item")) {
+              let e = document.querySelectorAll(".paging__btn");
+              e &&
+                (e.forEach((e) => {
+                  e.classList.contains("paging-active") &&
+                    e.classList.remove("paging-active");
+                }),
+                Bt.classList.add("paging-active"));
+            }
+          })());
+      }),
         zt &&
           ((It = zt.value),
           zt.addEventListener("keyup", (e) => {
@@ -8025,19 +8026,23 @@
               1 == It
                 ? Pt && Pt.classList.add("_btn-disable")
                 : Pt.classList.remove("_btn-disable"));
-          })));
-      let Vt,
-        Ht = !0;
+          })),
+        Vt.length > 0 &&
+          Vt.forEach((e) => {
+            e.style.backgroundColor = e.dataset.color;
+          }));
+      let Ht,
+        Gt = !0;
       (document.addEventListener("click", function (e) {
-        ((Vt = e.target),
-          Ht && Vt.closest(".menu-text")
+        ((Ht = e.target),
+          Gt && Ht.closest(".menu-text")
             ? (document.documentElement.classList.add("menu-open"),
               document.documentElement.classList.add("no-scrolling"),
-              (Ht = !1))
-            : Vt.closest(".menu") ||
+              (Gt = !1))
+            : Ht.closest(".menu") ||
               (document.documentElement.classList.remove("menu-open"),
               document.documentElement.classList.remove("no-scrolling"),
-              (Ht = !0)));
+              (Gt = !0)));
       }),
         (window.FLS = !0),
         (function (e) {
