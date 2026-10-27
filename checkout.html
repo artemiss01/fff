@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>оформление заказа</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<style>
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 500;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			height: 100vh;
+			background-color: #050505;
+			overflow: hidden;
+		}
+
+		.preloader img {
+			width: 128px;
+			height: 128px;
+
+			animation: preload-fkd 1s linear infinite;
+		}
+
+
+		@keyframes preload-fkd {
+			0% {
+				transform: scale(1);
+			}
+
+			50% {
+				transform: scale(1.1);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}
+	</style>
+
+
+	<link rel="stylesheet" href="css/style.min.css?_v=20261028000635">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="preloader">
+	<img src="img/icons/preloader.svg" alt="preloader">
+</div>
+
+<body>
+	<div class="wrapper">
+		<header class="header header_black">
+			<div class="header__container">
+				<div class="header__row row-header">
+					<a href="home.html" class="row-header__logo"><picture><source srcset="img/icons/logo-fkd.webp" type="image/webp"><img src="img/icons/logo-fkd.png" alt="logotype fkd"></picture></a>
+					<div class="row-header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item_categories" data-da=".row-header, 767.98, 2">
+									<a href="category.html" class="menu__link link-for-submenu">categories</a>
+									<button class="menu__arrow arrow-button" aria-label="button orange arrow"></button>
+									<nav class="menu__sub-menu">
+										<ul class="menu__sub-list">
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">t-shirt</a></li>
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">caps</a></li>
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">shtani</a></li>
+											<li data-da=".menu__list,767.98,0" class="menu__item menu__item_sub-item"><a href="#" class="menu__link">hudi</a></li>
+										</ul>
+									</nav>
+								</li>
+								<li class="menu__item"><a href="about.html" class="menu__link">about us</a></li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">conacts</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="row-header__info-block block-info-header" data-da=".menu__list, 479.98, 0 ">
+						<div class="block-info-header__custom-select" data-da=".menu__list, 767.98, 9" translate="no">
+
+							<select name="money" class="block-info-header__change-money">
+								<option value="1" selected>mdl</option>
+								<option value="2">usd</option>
+								<option value="3">eur</option>
+							</select>
+
+
+							<select name="language" class="block-info-header__language">
+								<option value="1" selected>ru</option>
+								<option value="2">EN</option>
+								<option value="3">RO</option>
+							</select>
+						</div>
+						<a href="bag.html" class="block-info-header__bag bag" aria-label="shopping cart" translate="no">
+							<span class="bag__quentity">22</span>
+							<span class="bag__value-price">$250</span>
+						</a>
+					</div>
+					<button type="button" class="row-header__menu-icon menu-text">
+						<i></i>
+						<div class="menu-text__txt">
+							<span class="menu-text__label-close" translate="no">close</span>
+							<span class="menu-text__label-open" translate="no">menu</span>
+						</div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page page_bg">
+			<div class="page__breadcrumbs-checkout breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list breadcrumbs__list_black-color">
+						<li class="breadcrumbs__item"><a href="home.html" class="breadcrumbs__link">главная</a></li>
+						<li class="breadcrumbs__item"><a href="category.html" class="breadcrumbs__link">корзина покупок</a></li>
+						<li class="breadcrumbs__item">
+							<p class="breadcrumbs__link breadcrumbs__link_active">оформление заказа</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="page__order-details order-details">
+				<div class="order-details__container">
+					<div class="order-details__top-row row-top">
+						<h1 class="row-top__title caption">оформление заказа</h1>
+					</div>
+
+					<form data-dev autocomplete="off" action="" class="order-details__row-form">
+						<div class="order-details__left-item-form form-left-item">
+							<div data-spollers="767.98,max" data-one-spoller class="form-left-item__spollers spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title title-checkout _spoller-active">данные для заказа</button>
+									<div class="spollers__body form-fkd">
+										<div class="form-fkd__wrapper-input">
+											<h4 class="form-fkd__label-title title-label">имя<span>*</span></h4>
+											<input data-required data-validate type="text" name="firstname" value="" id="input-payment-firstname" data-error="пожалуйста введите ваше имя" placeholder="ваше имя" class="form-fkd__input">
+										</div>
+										<div class="form-fkd__wrapper-input">
+											<h4 class="form-fkd__label-title title-label">фамилия<span>*</span></h4>
+											<input data-required data-validate type="text" name="lastname" value="" id="input-payment-lastname" data-error="пожалуйста введите вашу фамилию" placeholder="ваша фамилия" class="form-fkd__input">
+										</div>
+										<div class="form-fkd__wrapper-input">
+											<h4 class="form-fkd__label-title title-label">электронная рочта<span>*</span></h4>
+											<input data-required="email" data-validate type="email" name="email" value="" id="input-payment-email" data-error="пожалуйста введите емэйл" placeholder="емэйл" class="form-fkd__input">
+										</div>
+										<div class="form-fkd__wrapper-input">
+											<h4 class="form-fkd__label-title title-label">номер телефона<span>*</span></h4>
+											<input data-required data-validate type="tel" name="telephone" value="" id="input-payment-telephone" data-error="пожалуйста введите номер телефона" placeholder="номер телефона" class="form-fkd__input">
+										</div>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title title-checkout">Адрес доставки</button>
+									<div class="spollers__body form-fkd">
+										<h4 class="form-fkd__label-title title-label">страна <span>*</span></h4>
+										<select data-required data-scroll name="country_id" id="input-payment-country" class="form-fkd__select">
+											<option value="" selected>--выберите--</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+										<h4 class="form-fkd__label-title title-label">штат/регион <span>*</span></h4>
+										<select data-required data-scroll name="zone_id" id="input-payment-zone" class="form-fkd__select">
+											<option value="" selected>--выберите--</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+										<div class="form-fkd__wrapper-input">
+											<h4 class="form-fkd__label-title title-label">город<span>*</span></h4>
+											<input data-required data-validate type="text" name="city" value="" id="input-payment-city" data-error="напишите ваш город" placeholder="напишите ваш город" class="form-fkd__input">
+										</div>
+										<div class="form-fkd__wrapper-input">
+											<h4 class="form-fkd__label-title title-label">индекс<span>*</span></h4>
+											<input data-required data-validate type="text" name="postcode" value="" id="input-payment-postcode" data-error="напишите индекс" placeholder="индекс вашего города" class="form-fkd__input">
+										</div>
+										<div class="form-fkd__wrapper-input">
+											<h4 class="form-fkd__label-title title-label">адрес<span>*</span></h4>
+											<input data-required data-validate type="text" name="address_1" value="" id="input-payment-address-1" data-error="напишите адресс" placeholder="название улицы,дома,квартиры" class="form-fkd__input">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order-details__right-item-form form-right-item">
+							<div data-spollers="767.98,max" class="form-right-item__spollers spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title title-checkout _spoller-active">способ доставки</button>
+									<div class="spollers__body">
+										<div class="spollers__shiping-method shiping-method" id="collapse-shipping-method">
+											<h4 class="shiping-method__subtitle">Пожалуйста, выберите предпочтительный способ доставки для этого
+												заказа</h4>
+											<p>Бесплатная доставка</p>
+											<div class="shiping-method__check-form form-check">
+												<input required type="radio" name="shipping_method" value="free.free" id="input-shipping-method-free-free">
+												<label for="input-shipping-method-free-free">Бесплатная доставка - 0р.</label>
+											</div>
+											<p>Фиксированная стоимость доставки</p>
+											<div class="shiping-method__check-form form-check">
+												<input type="radio" name="shipping_method" value="" id="input-shipping-method-flat-flat">
+												<label for="input-shipping-method-flat-flat">фиксированная стоимость доставки -5р</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-right-item__price price-payment">
+								<p class="price-payment__title">сумма заказа</p>
+								<div class="price-payment__quentity-info info-quentity info-card-bag">
+									<div class="info-quentity__title">товароа</div>
+									<div class="info-quentity__product-quentity">99</div>
+								</div>
+								<div class="price-payment__order price-order info-card-bag">
+									<div class="price-order__title">ценна</div>
+									<div class="price-order__price">$147</div>
+								</div>
+								<div class="price-payment__shiping price-order info-card-bag">
+									<div class="price-order__title">доставка</div>
+									<div class="price-order__price">$30</div>
+								</div>
+								<div class="price-payment__total price-order info-card-bag">
+									<div class="price-order__title">итоговая цена</div>
+									<div class="price-order__price price-order__price_big-price">$30</div>
+								</div>
+							</div>
+							<div class="form-right-item__coment payment-coment">
+								<p class="payment-coment__title">комментарий к заказу</p>
+								<textarea name="comment" class="payment-coment__txt" placeholder="коментарий к заказу"></textarea>
+							</div>
+							<div data-spollers="767.98,max" class="form-right-item__spollers spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title title-checkout _spoller-active">методы оплаты</button>
+									<div class="spollers__body method-payment" id="collapse-payment-method">
+										<label>
+											<input type="radio" name="payment_method">
+											<p>оплата при доставке</p>
+										</label>
+										<label>
+											<input type="radio" name="payment_method">
+											<p>оплата картой клевер</p>
+										</label>
+										<label>
+											<input type="radio" name="payment_method">
+											<p>оплата картой visa mastercard</p>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-right-item__agree agree">
+								<input type="checkbox" name="agree" value="1" class="agree__checkbox">
+								<p class="agree__terms">Я прочитал <a href="#" class="agree__link">Terms & Conditions</a> и согласен с условиями безопасности и обработки персональных данных</p>
+							</div>
+							<input type="button" value="Подтверждение заказа" id="button-confirm" class="form-right-item__btn-confirm btn-bay btn-bay_orange">
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__row">
+					<div class="footer__item-left left-item-footer">
+						<p class="left-item-footer__big-txt">Your inner fire <br> <span> is your energy</span></p>
+						<p class="left-item-footer__small-txt">flamekid - own way</p>
+						<a href="#" class="left-item-footer__link btn-bay btn-bay_orange">shop now</a>
+						<p class="left-item-footer__copyright" data-da=".right-item, 767.98,4">2026 flamekid. all rights reserved</p>
+					</div>
+					<div class="footer__item-img">
+						<div class="footer__wrapper-decor-ibg">
+							<img src="img/icons/fkd-footer.svg" alt="fkd">
+						</div>
+					</div>
+					<div class="footer__item-right right-item">
+						<a href="home.html" class="right-item__logo">flamekid</a>
+						<div class="right-item__social-media media-social">
+
+							<a href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/inst-01.webp" type="image/webp"><img src="img/icons/inst-01.png" alt="instagram icon"></picture>
+							</a>
+
+							<a href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/tiktok-01.webp" type="image/webp"><img src="img/icons/tiktok-01.png" alt="tiktok icon"></picture>
+							</a>
+
+							<a href="#" class="media-social__link-ibg">
+								<picture><source srcset="img/icons/tg-01.webp" type="image/webp"><img src="img/icons/tg-01.png" alt="telegram icon"></picture>
+							</a>
+						</div>
+						<div data-spollers="767.98,max" class="right-item__spollers spollers">
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">information</button>
+								<ul class="spollers__body">
+									<li class="spollers__items"><a href="#" class="spollers__link">о нас</a></li>
+									<li class="spollers__items"><a href="return.html" class="spollers__link">возврат</a></li>
+									<li class="spollers__items"><a href="#" class="spollers__link">контакты</a></li>
+									<li class="spollers__items"><a href="information.html" class="spollers__link">политика обработки данных</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20261028000635"></script>
+</body>
+
+</html>
